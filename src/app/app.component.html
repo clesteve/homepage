@@ -1,0 +1,51 @@
+<h1><span style='font-weight:100; display:inline-block '>Clément Esteve</span></h1>
+
+<!-- <div class='container'>
+<router-outlet></router-outlet>
+</div> -->
+
+<mat-tab-group>
+  <mat-tab label="About">
+    <div  style='height:60vh'>
+    <div style='margin-top:20px; display:flex; justify-content:center; align-items:center; width:100vw; flex-wrap:wrap; height:100%'>
+      <a class='contact' href="https://www.linkedin.com/in/cl%C3%A9ment-esteve-261b13108/" target='_blank'>
+          <fa-icon [icon]="faLinkedin" style='color:#0072b1'></fa-icon> </a>
+      <a class='contact' href="https://github.com/clesteve" target='_blank'><fa-icon [icon]="faGithub"></fa-icon></a>
+      <a class='contact' href="https://soundcloud.com/clement-esteve"><fa-icon [icon]="faSoundcloud" style='color:"darkorange"'></fa-icon></a>
+      <a class='contact' href="mailto:hello@clementesteve.fr"><fa-icon [icon]="faEnvelope" style='color:"grey"'></fa-icon></a>
+    </div>
+    </div>
+  </mat-tab>
+
+  <mat-tab label="Projects">
+    
+<div style='display:flex; max-width:100vw; flex-wrap:wrap'>
+  <mat-card class="home-card" (click)="open('https://cinereco.clementesteve.fr')">
+    <mat-card-header>
+      <mat-card-title>Cinereco</mat-card-title>
+      <mat-card-subtitle>Movie recommendations</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class='home-image' src="/assets/images/cinereco.png">
+    <mat-card-content class='card-content'>
+      <p style="height:100px">
+        Get movie recommendations based on others liking similar movies.
+        Coded as a way to get through the confinement by both occupying my days coding it and allowing my roommates and I to find new movies to watch at night.
+      </p>
+  </mat-card-content>
+  </mat-card>
+  
+  <mat-card class="home-card" (click)="open('http://timesup.clementesteve.fr')">
+    <mat-card-header>
+      <mat-card-title>Time's up</mat-card-title>
+      <mat-card-subtitle>Online implementation of the famous game</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image  class='home-image' src="/assets/images/timesup.png">
+    <mat-card-content class='card-content'>
+      <p style="height:100px">
+        A UX friendly & COVID compliant (i.e.) online implementation of the "Time's up" game 
+      </p>
+  </mat-card-content>
+  </mat-card>
+</div>
+  </mat-tab>
+</mat-tab-group>
